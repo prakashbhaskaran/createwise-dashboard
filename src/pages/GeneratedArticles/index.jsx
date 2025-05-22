@@ -12,12 +12,12 @@ import { useSidebar } from "@/components/ui/sidebar";
 const GeneratedArticles = () => {
   const { setOpenMobile, openMobile } = useSidebar();
   return (
-    <div className="bg-white py-4 h-full">
+    <div className="bg-white py-4 h-full relative ">
       {" "}
       <AppVStack className="items-center gap-4 mt-4">
-        <AppHStack className="relative w-full justify-center">
+        <AppHStack className="w-full justify-center">
           <div
-            className="absolute block lg:hidden left-[20px] top-[0px] cursor-pointer"
+            className="absolute block lg:hidden left-[20px] top-[20px] cursor-pointer"
             onClick={() => {
               setOpenMobile(!openMobile);
             }}
